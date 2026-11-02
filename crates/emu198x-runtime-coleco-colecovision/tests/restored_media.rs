@@ -1,8 +1,8 @@
+use emu198x_runtime_coleco_colecovision::{CvRuntime, Model};
 use emu198x_shell::{
     HostIo, MachineCore, MachineError, MediaImage, MediaKind, MediaSet, NullAudioSink,
     NullFrameSink, NullTraceSink, ResetKind,
 };
-use runtime_coleco_colecovision::{CvRuntime, Model};
 const LIMIT: usize = 32768;
 fn runtime(model: Model) -> CvRuntime {
     let mut bios = vec![0; 8192];

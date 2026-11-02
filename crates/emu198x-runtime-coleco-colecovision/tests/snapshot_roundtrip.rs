@@ -6,10 +6,10 @@
 //! the shared `MachineCore` surface, so it needs no firmware and runs on every
 //! push.
 
+use emu198x_runtime_coleco_colecovision::{CvRuntime, Model};
 use emu198x_shell::{
     HostIo, MachineCore, MachineTime, NullAudioSink, NullFrameSink, NullTraceSink,
 };
-use runtime_coleco_colecovision::{CvRuntime, Model};
 
 const MODEL: Model = Model::CvNtsc;
 const WARMUP: u64 = 50_000;

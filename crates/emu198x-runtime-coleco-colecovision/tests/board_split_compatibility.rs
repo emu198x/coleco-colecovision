@@ -1,9 +1,9 @@
 //! Frozen pre-split v5 states and observations from 94564bea3.
+use emu198x_runtime_coleco_colecovision::{CvRuntime, Model};
 use emu198x_shell::{
     AudioPacket, AudioSink, FramePacket, FrameSink, HostIo, MachineCore, MachineError,
     NullTraceSink, StopReason,
 };
-use runtime_coleco_colecovision::{CvRuntime, Model};
 use std::path::PathBuf;
 #[derive(Default)]
 struct Audio(Vec<u8>);

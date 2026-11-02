@@ -7,7 +7,7 @@
 //! map to controller 1 as the keyboard-as-pad convention.
 
 use crate::machine::CvMachine as ColecoVision;
-use common_coleco_colecovision::{CvController, KeypadKey};
+use emu198x_common_coleco_colecovision::{CvController, KeypadKey};
 use emu198x_shell::InputEvent;
 
 /// Apply one host input event to the ColecoVision.

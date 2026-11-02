@@ -1,6 +1,6 @@
 //! ColecoVision NTSC board; shared wiring is statically bound here.
-use common_coleco_colecovision::{Board, CvCore, CvRegion, VdpRegion};
-pub use common_coleco_colecovision::{CvController, IoEvent, KeypadKey};
+use emu198x_common_coleco_colecovision::{Board, CvCore, CvRegion, VdpRegion};
+pub use emu198x_common_coleco_colecovision::{CvController, IoEvent, KeypadKey};
 /// Fixed NTSC board wiring.
 pub struct NtscBoard;
 impl Board for NtscBoard {

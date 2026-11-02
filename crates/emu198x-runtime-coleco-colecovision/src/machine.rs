@@ -1,9 +1,9 @@
 //! Family-owned dispatch for the two statically wired ColecoVision boards.
 use crate::profiles::Model;
-use common_coleco_colecovision::{CvController, CvRegion, CvState, IoEvent, Tms9918, Z80};
+use emu198x_common_coleco_colecovision::{CvController, CvRegion, CvState, IoEvent, Tms9918, Z80};
+use emu198x_machine_coleco_colecovision_ntsc::ColecoVision as Ntsc;
+use emu198x_machine_coleco_colecovision_pal::ColecoVision as Pal;
 use emu198x_zilog_z80::Z80Stepper;
-use machine_coleco_colecovision_ntsc::ColecoVision as Ntsc;
-use machine_coleco_colecovision_pal::ColecoVision as Pal;
 use serde::{Deserialize, Serialize};
 /// Concrete boards served by the family runtime.
 pub enum CvMachine {

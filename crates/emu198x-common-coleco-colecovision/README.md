@@ -2,7 +2,7 @@
 
 `CvCore<B>` binds shared pin-driven wiring to one board at compile time.
 The private NTSC/PAL machine crates select fixed video and raster constants;
-family selection and dispatch belong to `runtime-coleco-colecovision`.
+family selection and dispatch belong to `emu198x-runtime-coleco-colecovision`.
 
 `CvState` retains the original serialized field order. The runtime forwards
 state without an enum tag, preserving version-5 bytes. Concrete deserializers

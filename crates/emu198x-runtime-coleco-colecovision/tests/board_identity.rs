@@ -1,9 +1,9 @@
 //! Concrete board boundaries must reject a state from the other physical board.
-use common_coleco_colecovision::CvState;
+use emu198x_common_coleco_colecovision::CvState;
+use emu198x_machine_coleco_colecovision_ntsc::ColecoVision as Ntsc;
+use emu198x_machine_coleco_colecovision_pal::ColecoVision as Pal;
+use emu198x_runtime_coleco_colecovision::{CvRuntime, Model};
 use emu198x_shell::MachineCore;
-use machine_coleco_colecovision_ntsc::ColecoVision as Ntsc;
-use machine_coleco_colecovision_pal::ColecoVision as Pal;
-use runtime_coleco_colecovision::{CvRuntime, Model};
 
 type LegacyEnvelope = (u16, u64, String, Option<CvState>);
 

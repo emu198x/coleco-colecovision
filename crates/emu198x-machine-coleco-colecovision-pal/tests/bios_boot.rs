@@ -7,7 +7,7 @@
 //!
 //! Run with:
 //! ```text
-//! cargo test --release -p machine-coleco-colecovision-pal \
+//! cargo test --release -p emu198x-machine-coleco-colecovision-pal \
 //!     --test bios_boot -- --ignored --nocapture
 //! ```
 //!
@@ -19,7 +19,7 @@ use std::env;
 use std::fs;
 use std::path::PathBuf;
 
-use machine_coleco_colecovision_pal::ColecoVision;
+use emu198x_machine_coleco_colecovision_pal::ColecoVision;
 
 fn bios_path() -> Option<PathBuf> {
     if let Ok(path) = env::var("EMU198X_COLECOVISION_BIOS") {

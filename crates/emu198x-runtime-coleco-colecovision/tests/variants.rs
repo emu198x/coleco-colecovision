@@ -1,6 +1,6 @@
 //! Synthetic images verify cold-boot state, cartridge mapping and regional pacing.
+use emu198x_runtime_coleco_colecovision::{CvRuntime, Model};
 use emu198x_shell::{FamilyRuntime, FirmwareSet, HeadlessSession, MachineTime, ResetKind};
-use runtime_coleco_colecovision::{CvRuntime, Model};
 
 #[test]
 fn catalogue_round_trips_and_declares_switching() {
@@ -23,7 +23,7 @@ fn regional_switches_keep_cartridge_but_reset_machine_and_session() {
     let mut firmware = FirmwareSet::new();
     let bios = vec![0; 8192];
     firmware.push(emu198x_shell::FirmwareImage::new(
-        runtime_coleco_colecovision::BIOS_FIRMWARE_ID,
+        emu198x_runtime_coleco_colecovision::BIOS_FIRMWARE_ID,
         &bios,
     ));
     let mut runtime =

@@ -1,4 +1,4 @@
-use machine_coleco_colecovision_pal::ColecoVision;
+use emu198x_machine_coleco_colecovision_pal::ColecoVision;
 #[test]
 fn fresh_board_completes_its_native_raster() {
     let mut rom = vec![0; 8192];

@@ -4,8 +4,8 @@
 //! generic `query` surface. A synthetic 8 KiB BIOS makes the machine
 //! debuggable without an external ROM.
 
+use emu198x_runtime_coleco_colecovision::{CvRuntime, CvSessionQueryProvider, Model};
 use emu198x_shell::SessionQueryProvider;
-use runtime_coleco_colecovision::{CvRuntime, CvSessionQueryProvider, Model};
 
 fn loaded() -> CvRuntime {
     CvRuntime::new(Model::CvNtsc, vec![0u8; 8192]).expect("8 KiB BIOS builds the machine")

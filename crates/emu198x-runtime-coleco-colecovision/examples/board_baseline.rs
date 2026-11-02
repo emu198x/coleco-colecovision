@@ -1,8 +1,8 @@
+use emu198x_runtime_coleco_colecovision::{CvRuntime, Model};
 use emu198x_shell::{
     AudioPacket, AudioSink, HostIo, MachineCore, MachineError, NullFrameSink, NullTraceSink,
 };
 use emu198x_zilog_z80::Z80Stepper;
-use runtime_coleco_colecovision::{CvRuntime, Model};
 use std::{error::Error, path::PathBuf};
 #[derive(Default)]
 struct Audio(Vec<u8>);

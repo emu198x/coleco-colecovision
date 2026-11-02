@@ -1,6 +1,6 @@
 //! New-media validation must not reset or replace a running cartridge on error.
+use emu198x_runtime_coleco_colecovision::{CvRuntime, Model};
 use emu198x_shell::{HeadlessSession, MachineCore, MachineError, MediaImage, MediaKind, MediaSet};
-use runtime_coleco_colecovision::{CvRuntime, Model};
 
 fn cart(signature: [u8; 2]) -> Vec<u8> {
     let mut bytes = vec![0; 0x24];

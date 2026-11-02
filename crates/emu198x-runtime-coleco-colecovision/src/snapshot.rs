@@ -81,8 +81,10 @@ pub(crate) fn decode(runtime: &mut CvRuntime, bytes: &[u8]) -> Result<(), Machin
     if snapshot.machine.as_ref().is_some_and(|m| {
         m.region()
             != match runtime.model() {
-                crate::profiles::Model::CvNtsc => common_coleco_colecovision::CvRegion::Ntsc,
-                crate::profiles::Model::CvPal => common_coleco_colecovision::CvRegion::Pal,
+                crate::profiles::Model::CvNtsc => {
+                    emu198x_common_coleco_colecovision::CvRegion::Ntsc
+                }
+                crate::profiles::Model::CvPal => emu198x_common_coleco_colecovision::CvRegion::Pal,
             }
     }) {
         return Err(MachineError::InvalidSnapshot {

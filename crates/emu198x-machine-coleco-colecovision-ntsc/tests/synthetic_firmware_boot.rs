@@ -16,7 +16,7 @@
 
 use std::path::PathBuf;
 
-use machine_coleco_colecovision_ntsc::ColecoVision;
+use emu198x_machine_coleco_colecovision_ntsc::ColecoVision;
 
 /// TMS9918 palette entry 15. The power-on backdrop is entry 0, which is
 /// transparent, so white cannot appear unless the firmware ran.

@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.46.3](https://github.com/emu198x/coleco-colecovision/compare/emu198x-runtime-coleco-colecovision-v0.46.2...emu198x-runtime-coleco-colecovision-v0.46.3) - 2026-11-03
+
+### Fixed
+
+- preserve ColecoVision cartridges saved before BIOS loading
+
 ### Fixed
 
 - Preserve cartridges staged before BIOS loading in version-6 saves, with explicit version-5 readers retaining live media and leaving legacy empty saves empty.

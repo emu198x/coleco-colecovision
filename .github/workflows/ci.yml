@@ -24,3 +24,5 @@ jobs:
       # Ratchet up as tests grow; never down. Corpus tests are ignored here
       # and run nightly, so this measures the unit and fixture-free tests.
       coverage-floor: 74
+      # emu198x-shell's audio and gamepad backends.
+      linux-packages: pkg-config libasound2-dev libudev-dev

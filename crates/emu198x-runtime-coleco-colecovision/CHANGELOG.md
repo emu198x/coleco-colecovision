@@ -11,15 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- preserve ColecoVision cartridges saved before BIOS loading
-
-### Fixed
-
 - Preserve cartridges staged before BIOS loading in version-6 saves, with explicit version-5 readers retaining live media and leaving legacy empty saves empty.
-
-### Changed
-
-- Advance live-machine snapshots to version 3 and rehydrate the Z80 walker sequence before resumed execution; version 2 cannot preserve accepted interrupt response identity
 
 ## [0.2.0](https://github.com/emu198x/emu198x/releases/tag/runtime-coleco-colecovision-v0.2.0) - 2026-06-04
 

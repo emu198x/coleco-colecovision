@@ -16,7 +16,7 @@ permissions:
 jobs:
   release-plz:
     name: Release-plz
-    uses: stevehill1981/198x-workflows/.github/workflows/release-plz.yml@fix/release-linux-packages
+    uses: stevehill1981/198x-workflows/.github/workflows/release-plz.yml@v1
     # Named, not `inherit`: GitHub passes inherited secrets only within one
     # organisation or enterprise, and the shared workflow is in a personal
     # account. A secret this org lacks is passed empty.

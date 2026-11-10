@@ -231,9 +231,9 @@ dependencies = [
 
 [[package]]
 name = "emu198x-shell"
-version = "0.44.2"
+version = "0.44.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8b8b1261cbde30a6da197526ca98c82fb9a1eb39ffc8017ef8809f5879008a41"
+checksum = "aee922fed362c3818ef37316d5f7f20e6c7650aca18916d32b6a91887dd21ba0"
 dependencies = [
  "cpal",
  "debug198x",

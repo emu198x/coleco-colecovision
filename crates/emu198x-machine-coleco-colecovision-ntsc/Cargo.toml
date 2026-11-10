@@ -11,6 +11,6 @@ repository.workspace = true
 [dependencies]
 emu198x-common-coleco-colecovision = { path = "../emu198x-common-coleco-colecovision", version = "0.46.0" }
 [dev-dependencies]
-emu198x-zilog-z80 = "0.8.0"
+emu198x-zilog-z80 = "0.9.0"
 [lints]
 workspace = true
